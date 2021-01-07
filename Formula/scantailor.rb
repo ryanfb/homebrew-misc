@@ -9,7 +9,7 @@ class Scantailor < Formula
   depends_on "boost"
   depends_on "jpeg"
   depends_on "libtiff"
-  depends_on :x11
+  depends_on "libx11"
 
   def install
     system "cmake", ".", "-DPNG_INCLUDE_DIR=#{MacOS::X11.include}", "-DCMAKE_CXX_FLAGS=-std=c++11 -stdlib=libc++", *std_cmake_args
