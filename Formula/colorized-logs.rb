@@ -1,6 +1,6 @@
 class ColorizedLogs < Formula
+  desc "Tools for logs with ANSI color"
   homepage "https://github.com/kilobyte/colorized-logs"
-  desc "tools for logs with ANSI color"
   url "https://github.com/kilobyte/colorized-logs/archive/refs/tags/v2.5.tar.gz"
   sha256 "c484d489bdcbe57343f97c80b48d42b6de037af66103843cb63fb6d8679da340"
 
