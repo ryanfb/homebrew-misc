@@ -13,7 +13,7 @@ class Scantailor < Formula
 
   def install
     system "cmake", ".",
-           "-DPNG_INCLUDE_DIR=#{MacOS::X11.include}",
+           "-DPNG_INCLUDE_DIR=#{Formula["libx11"].opt_include}",
            "-DCMAKE_CXX_FLAGS=-std=c++11 -stdlib=libc++",
            *std_cmake_args
     system "make", "install"
